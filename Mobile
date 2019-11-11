@@ -1,0 +1,5 @@
+Flutter New Setup: 
++ Step 1: git clone https://github.com/flutter/flutter.git
++ Step 2: export PATH=$PWD/flutter/bin:$PATH
++ Step 3: flutter precache
++ Step 4: flutter doctor
