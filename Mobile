@@ -32,3 +32,14 @@ EX: @IBInspectable var cornerRadius: CGFloat = 0 {
        UIColor
        UIImage
 <<<<<<<<<<<<<<<<<<<<<<<<<<<
+************************************Return Keyboard*****************************
+func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        let txtTag:Int = textField.tag
+
+        if let textFieldNxt = self.view.viewWithTag(txtTag+1) as? UITextField {
+            textFieldNxt.becomeFirstResponder()
+        }else{
+            textField.resignFirstResponder()
+        }
+        return true
+    }
