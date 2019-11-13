@@ -43,3 +43,18 @@ func textFieldShouldReturn(_ textField: UITextField) -> Bool {
         }
         return true
     }
+****************** remove pod don't push github ***********************
+https://stackoverflow.com/questions/34230191/added-pod-files-and-pushed-how-to-undo-how-to-use-gitignore-in-xcode-github
+That's correct, you need to add the Pods directory to your .gitignore
+
+1) Remove your files from your github repository:
+
+git rm -r Pods/
+
+and don't forget to commit and push
+
+2) Create a gitignore file:
+
+Open terminal and go through your project folder where the .git folder is located
+Type touch .gitignore
+Type echo "Pods/" > .gitignore
