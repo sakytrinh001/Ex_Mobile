@@ -20,4 +20,15 @@ EX: @IBInspectable var cornerRadius: CGFloat = 0 {
         layer.borderColor = borderColor?.cgColor
        }
     }
-
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+       Int
+       CGFloat
+       Double
+       String
+       Bool
+       CGPoint
+       CGSize
+       CGRect
+       UIColor
+       UIImage
+<<<<<<<<<<<<<<<<<<<<<<<<<<<
