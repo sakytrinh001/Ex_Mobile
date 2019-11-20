@@ -58,3 +58,13 @@ and don't forget to commit and push
 Open terminal and go through your project folder where the .git folder is located
 Type touch .gitignore
 Type echo "Pods/" > .gitignore
+
+
+
+-----------------------Github Init--------------------------
+Open up a terminal, navigate to the SwiftyLib Xcode project folder, and type in the following commands:
+> git init
+> git remote add origin git@github.com:{USERNAME}/SwiftyLib.git
+> git add .
+> git commit -m "Initial project setup"
+> git push -u origin master
