@@ -68,3 +68,10 @@ Open up a terminal, navigate to the SwiftyLib Xcode project folder, and type in 
 > git add .
 > git commit -m "Initial project setup"
 > git push -u origin master
+
+---------------------------Open Settings-----------------------
+if let url = URL(string: UIApplication.openSettingsURLString) {
+                UIApplication.shared.open(url, options: [:], completionHandler: { _ in
+                    // Handle
+                })
+            }
