@@ -80,3 +80,6 @@ if let url = URL(string: UIApplication.openSettingsURLString) {
 - Map: change item in array. Ex: arrayOfInt.map { $0 * 10 }. 
 - Filter: ex: listRegion!.filter { $0.name!.lowercased().contains(text.lowercased()) } 
 URL: https://medium.com/@abhimuralidharan/higher-order-functions-in-swift-filter-map-reduce-flatmap-1837646a63e8
+
+----------------------------Swift Programming-------------------------------
+https://medium.com/swift-programming/qr-code-generation-with-a-custom-logo-and-color-using-swift-e1d0a44adbe3
