@@ -1,0 +1,25 @@
+@IBAction func actTabbar(_ sender: UIButton) {
+        switch sender.tag {
+        case 1:
+            self.viewAnimationTabbar.backgroundColor = .blue
+            UIView.animate(withDuration: 0.3, delay: 0.0, options: .curveEaseIn, animations: {
+                self.viewAnimationTabbar.center.x = self.viewAnimationTabbar.bounds.width + self.viewAnimationTabbar.bounds.width/2
+                print("=============>\(sender.tag): \(self.viewAnimationTabbar.center.x) - \(self.viewAnimationTabbar.bounds.width)")
+            }, completion: nil)
+            break
+        case 2:
+            self.viewAnimationTabbar.backgroundColor = .yellow
+            UIView.animate(withDuration: 0.3, delay: 0.0, options: .curveEaseIn, animations: {
+                self.viewAnimationTabbar.center.x = self.viewAnimationTabbar.frame.width*2 + self.viewAnimationTabbar.bounds.width/2
+                print("=============>\(sender.tag): \(self.viewAnimationTabbar.center.x) - \(self.viewAnimationTabbar.bounds.width)")
+            }, completion: nil)
+            break
+        default:
+            self.viewAnimationTabbar.backgroundColor = .red
+            UIView.animate(withDuration: 0.3, delay: 0.0, options: .curveEaseIn, animations: {
+                self.viewAnimationTabbar.center.x = self.viewAnimationTabbar.bounds.width/2
+                print("=============>\(sender.tag): \(self.viewAnimationTabbar.center.x) - \(self.viewAnimationTabbar.bounds.width)")
+            }, completion: nil)
+            break
+        }
+    }
