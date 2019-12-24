@@ -90,3 +90,5 @@ https://www.softwaretestinghelp.com/swift-interview-questions/
 ------------------------------ Text Recognition --------------------------------
 https://heartbeat.fritz.ai/text-recognition-and-translation-on-ios-using-ml-kit-and-google-translate-5b24440906db
 
+---------------------------------------- Add SearchBar in Tableview Header ------------------------------------
+tableView.tableHeaderView = searchController.searchBar
