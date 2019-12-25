@@ -1,0 +1,31 @@
+*********Step 1************
+------------Add Info.plist of AppB----------
+<key>CFBundleURLTypes</key>
+	<array>
+		<dict>
+			<key>CFBundleURLSchemes</key>
+			<array>
+				<string>UsingScheme1</string>//key tuyf thichs
+				<string>UsingScheme2</string>
+			</array>
+			<key>CFBundleURLName</key>
+			<string>$(PRODUCT_BUNDLE_IDENTIFIER)</string>
+		</dict>
+	</array>
+ *********Step 2************
+ ------------Add Data of AppA----------
+ if let url = URL(string: String(format: "%@%@","UsingScheme1://" ,text )) {
+    UIApplication.shared.open(url, options: [:], completionHandler: nil)
+ }
+  *********Step 3************
+  ------------Get Data From AppA in AppB----------
+ func application(_ app: UIApplication, open url: URL, options: [UIApplication.OpenURLOptionsKey : Any] = [:]) -> Bool {
+        NSLog("scheme value \(url.absoluteString)" )
+               
+        let arrData = url.absoluteString.components(separatedBy: "//")
+        if arrData.count > 1 {
+            let alert = UIAlertController(title: arrData[1], message: "", preferredStyle: .alert)
+            self.window?.rootViewController?.present(alert, animated: true, completion: nil)
+        }
+        return true
+    }
