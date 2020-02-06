@@ -96,3 +96,6 @@ tableView.tableHeaderView = searchController.searchBar
 
 ----------------------------------- Đưa app lên top Store ------------------------------------------
 http://dvms.vn/tin-tuc/tin-nganh/396-cach-dua-ung-dung-cua-ban-len-top-tren-cho-ung-dung-di-dong.html
+
+-----------------------------Create Pod----------------------------------
+https://medium.com/@shahabejaz/create-and-distribute-private-libraries-with-cocoapods-5b6507b57a03
